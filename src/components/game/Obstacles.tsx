@@ -1,11 +1,11 @@
 'use client'
 
-import { useRef, useMemo, useCallback } from 'react'
+import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
 import { useGameStore } from '@/stores/gameStore'
 import { DIMENSION_COLORS, type Dimension, type ObstacleData, type EnergyFragment, type ChunkData } from '@/types/game'
-import { getActiveChunks } from '@/lib/procedural'
+import { getActiveChunks, CHUNK_DEPTH } from '@/lib/procedural'
 
 const COLLISION_RADIUS_PLAYER = 0.4
 const NEAR_MISS_MULT = 2.5
@@ -83,11 +83,9 @@ export default function Obstacles() {
 }
 
 function ChunkRenderer({ chunksRef }: { chunksRef: React.RefObject<Map<number, ChunkData>> }) {
-  const meshesRef = useRef<Map<string, boolean>>(new Map())
-
-  useFrame(() => {
-    // Force re-render by touching ref - chunks update via the frame loop
-  })
+  // Re-render when player crosses a chunk boundary or speed tier changes
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const _chunkKey = useGameStore((s) => s.speedTier * 100000 + Math.floor(s.distanceTraveled / CHUNK_DEPTH))
 
   const store = useGameStore.getState()
   const chunks = chunksRef.current
