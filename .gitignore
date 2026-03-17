@@ -41,3 +41,15 @@ yarn-error.log*
 next-env.d.ts
 
 .vercel
+
+# Added by git-hygiene
+node_modules/
+.env
+.env.*
+.env.local
+.env.production
+__pycache__/
+dist/
+.next/
+.vercel/
+*.log
