@@ -22,11 +22,13 @@ export const metadata: Metadata = {
     description: 'A 3D dimension-phasing browser game. Dodge obstacles across three color realities.',
     type: 'website',
     url: 'https://voiddrift.dev',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Void Drift',
     description: 'Phase through dimensions. Drift through the void.',
+    images: ['/opengraph-image'],
   },
 }
 
