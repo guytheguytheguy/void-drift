@@ -53,3 +53,6 @@ dist/
 .next/
 .vercel/
 *.log
+
+# Allow env example (negation must come after all matching patterns)
+!.env.local.example
