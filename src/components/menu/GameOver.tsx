@@ -63,10 +63,31 @@ export default function GameOver() {
     setSubmitting(false)
   }
 
+  const [copied, setCopied] = useState(false)
+
   function handleShare() {
     const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me?\nhttps://voiddrift.dev\n#VoidDrift #BrowserGame`
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`
     window.open(url, '_blank', 'width=550,height=420')
+  }
+
+  async function handleCopyLink() {
+    const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me? https://voiddrift.dev`
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Fallback for browsers without clipboard API
+      const el = document.createElement('textarea')
+      el.value = text
+      document.body.appendChild(el)
+      el.select()
+      document.execCommand('copy')
+      document.body.removeChild(el)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
   }
 
   return (
@@ -151,20 +172,27 @@ export default function GameOver() {
             PLAY AGAIN
           </button>
 
-          <div className="flex gap-3 w-full">
+          <div className="flex gap-2 w-full">
             <button
               onClick={handleShare}
-              className="flex-1 px-4 py-2 text-sm text-zinc-400 border border-zinc-700 rounded-lg
+              className="flex-1 px-3 py-2 text-sm text-zinc-400 border border-zinc-700 rounded-lg
                 hover:text-white hover:border-zinc-500 transition-all cursor-pointer"
             >
               SHARE ON X
             </button>
             <button
+              onClick={handleCopyLink}
+              className="flex-1 px-3 py-2 text-sm border rounded-lg transition-all cursor-pointer
+                text-zinc-400 border-zinc-700 hover:text-white hover:border-zinc-500"
+            >
+              {copied ? 'COPIED!' : 'COPY LINK'}
+            </button>
+            <button
               onClick={reset}
-              className="flex-1 px-4 py-2 text-sm text-zinc-400 border border-zinc-700 rounded-lg
+              className="flex-1 px-3 py-2 text-sm text-zinc-400 border border-zinc-700 rounded-lg
                 hover:text-white hover:border-zinc-500 transition-all cursor-pointer"
             >
-              MAIN MENU
+              MENU
             </button>
           </div>
         </div>
