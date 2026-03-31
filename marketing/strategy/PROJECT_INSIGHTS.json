@@ -1,0 +1,50 @@
+{
+  "productName": "Void Drift",
+  "tagline": "Phase through dimensions. Drift through the void.",
+  "category": ["browser game", "3D experience", "arcade", "WebGL showcase"],
+  "deployUrl": "https://voiddrift.dev",
+  "repoPath": "C:/Users/User/dev/void-drift",
+  "parentBrand": {
+    "name": "Veridux Labs",
+    "url": "https://veridux.ai"
+  },
+  "targetAudience": [
+    "Casual browser gamers looking for quick, engaging arcade experiences they can play instantly without downloads",
+    "Web technology enthusiasts and Three.js/WebGL developers interested in browser-based 3D capabilities",
+    "Indie game fans who appreciate unique visual aesthetics and procedural generation",
+    "Competitive arcade players motivated by global leaderboards and score chasing",
+    "Developers and designers seeking inspiration for browser-based 3D projects"
+  ],
+  "coreValueProps": [
+    "Instant play: zero downloads, zero installs -- open the browser and you're in the void. Works on any modern device.",
+    "Procedurally-generated environments: every run is unique. The void reshapes itself, keeping gameplay fresh across hundreds of sessions.",
+    "Global competition: Supabase-powered real-time leaderboard lets you compete against players worldwide and track your progression."
+  ],
+  "techStack": ["Next.js", "React", "Three.js", "React Three Fiber", "Zustand", "Tailwind CSS", "Supabase", "TypeScript"],
+  "pricingModel": "Free-to-play. No microtransactions. Serves as a portfolio showcase for Veridux Labs' technical capabilities in 3D web experiences and real-time backend integration. Revenue is indirect through brand awareness and developer portfolio credibility.",
+  "competitors": [
+    {
+      "name": "Slope",
+      "url": "https://slope-game.com",
+      "positioning": "Popular browser-based 3D endless runner. Ball rolls down an increasingly difficult slope. Massive player base through school/office play. Simple WebGL graphics, no accounts or leaderboards. Ad-supported. Extremely accessible but technically basic."
+    },
+    {
+      "name": "HexGL",
+      "url": "https://hexgl.bkcore.com",
+      "positioning": "Open-source browser racing game built with Three.js. Futuristic anti-gravity racer on a fixed track. Technical showcase for WebGL capabilities. Single track, no leaderboard integration, no procedural generation. Impressive but limited replayability."
+    },
+    {
+      "name": "Krunker.io",
+      "url": "https://krunker.io",
+      "positioning": "Browser-based first-person shooter with retro/voxel graphics. Massive multiplayer community, custom maps, trading system. Different genre (FPS vs arcade) but competes for browser gaming attention. More complex, longer session times."
+    }
+  ],
+  "differentiators": [
+    "Procedurally-generated void environments ensure no two runs are identical",
+    "Modern tech stack (React Three Fiber + Zustand) demonstrates production-quality browser 3D",
+    "Supabase-powered global leaderboard with real-time updates",
+    "Unique visual aesthetic (void/dimensional theme) stands out from typical browser games",
+    "Built as a showcase of what's possible with modern web technologies"
+  ],
+  "lastUpdated": "2026-03-29"
+}
