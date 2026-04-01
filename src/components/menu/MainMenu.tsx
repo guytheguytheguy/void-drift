@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useGameStore } from '@/stores/gameStore'
 import HowToPlay from './HowToPlay'
 
@@ -11,6 +11,11 @@ export default function MainMenu() {
   const muted = useGameStore((s) => s.muted)
   const toggleMute = useGameStore((s) => s.toggleMute)
   const [showHowTo, setShowHowTo] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
+
+  useEffect(() => {
+    setIsTouchDevice('ontouchstart' in window)
+  }, [])
 
   if (phase !== 'menu') return null
 
@@ -103,9 +108,9 @@ export default function MainMenu() {
           </a>
         </div>
 
-        {/* Keyboard hint */}
+        {/* Start hint */}
         <div className="mt-4 text-[10px] text-zinc-700">
-          Press SPACE or ENTER to start
+          {isTouchDevice ? 'TAP TO START' : 'Press SPACE or ENTER to start'}
         </div>
       </div>
 

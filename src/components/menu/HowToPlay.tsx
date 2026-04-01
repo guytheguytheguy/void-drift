@@ -54,22 +54,40 @@ export default function HowToPlay({ onClose }: { onClose: () => void }) {
         {/* Controls */}
         <div className="mb-6">
           <h3 className="text-sm text-cyan-400 uppercase tracking-widest mb-3">Controls</h3>
-          <div className="space-y-2 text-sm">
-            <div className="flex justify-between text-zinc-300">
-              <span>Move</span>
-              <span className="text-zinc-500 font-mono">WASD / Arrow Keys</span>
+          <div className="space-y-3 text-sm">
+            <div>
+              <div className="text-zinc-500 text-[10px] uppercase tracking-widest mb-1">Keyboard</div>
+              <div className="space-y-1">
+                <div className="flex justify-between text-zinc-300">
+                  <span>Move</span>
+                  <span className="text-zinc-500 font-mono">WASD / Arrow Keys</span>
+                </div>
+                <div className="flex justify-between text-zinc-300">
+                  <span>Dimension 1/2/3</span>
+                  <span className="text-zinc-500 font-mono">1 / 2 / 3</span>
+                </div>
+                <div className="flex justify-between text-zinc-300">
+                  <span>Cycle Dimension</span>
+                  <span className="text-zinc-500 font-mono">Q / E</span>
+                </div>
+                <div className="flex justify-between text-zinc-300">
+                  <span>Pause</span>
+                  <span className="text-zinc-500 font-mono">ESC</span>
+                </div>
+              </div>
             </div>
-            <div className="flex justify-between text-zinc-300">
-              <span>Dimension 1/2/3</span>
-              <span className="text-zinc-500 font-mono">1 / 2 / 3</span>
-            </div>
-            <div className="flex justify-between text-zinc-300">
-              <span>Cycle Dimension</span>
-              <span className="text-zinc-500 font-mono">Q / E</span>
-            </div>
-            <div className="flex justify-between text-zinc-300">
-              <span>Pause</span>
-              <span className="text-zinc-500 font-mono">ESC</span>
+            <div>
+              <div className="text-zinc-500 text-[10px] uppercase tracking-widest mb-1">Mobile / Touch</div>
+              <div className="space-y-1">
+                <div className="flex justify-between text-zinc-300">
+                  <span>Move</span>
+                  <span className="text-zinc-500 font-mono">Swipe (left 75%)</span>
+                </div>
+                <div className="flex justify-between text-zinc-300">
+                  <span>Shift Dimension</span>
+                  <span className="text-zinc-500 font-mono">Tap buttons (right)</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

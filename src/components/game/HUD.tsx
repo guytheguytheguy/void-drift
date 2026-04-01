@@ -1,5 +1,6 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { useGameStore } from '@/stores/gameStore'
 import { DIMENSION_COLORS, DIMENSIONS, type Dimension } from '@/types/game'
 
@@ -13,6 +14,11 @@ export default function HUD() {
   const driftBonusActive = useGameStore((s) => s.driftBonusActive)
   const energyFragments = useGameStore((s) => s.energyFragments)
   const nearMisses = useGameStore((s) => s.nearMisses)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
+
+  useEffect(() => {
+    setIsTouchDevice('ontouchstart' in window)
+  }, [])
 
   if (phase !== 'playing' && phase !== 'paused') return null
 
@@ -74,9 +80,18 @@ export default function HUD() {
       )}
 
       {/* Dimension shift hint - bottom right */}
-      <div className="absolute bottom-8 right-6 text-zinc-600 text-xs">
-        <div>1/2/3 or Q/E to shift</div>
-        <div>WASD to move</div>
+      <div className="absolute bottom-8 right-6 text-zinc-600 text-xs text-right">
+        {isTouchDevice ? (
+          <>
+            <div>tap buttons to shift</div>
+            <div>swipe to move</div>
+          </>
+        ) : (
+          <>
+            <div>1/2/3 or Q/E to shift</div>
+            <div>WASD to move</div>
+          </>
+        )}
       </div>
 
       {/* Paused overlay */}
