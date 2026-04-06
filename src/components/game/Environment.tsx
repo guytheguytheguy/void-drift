@@ -58,7 +58,7 @@ function StarField() {
     const store = useGameStore.getState()
 
     // Move stars relative to player for parallax
-    pointsRef.current.position.z = store.playerPosition[2] * 0.1
+    pointsRef.current.position.z = store.playerPosition[2]
 
     // Slow rotation for atmosphere
     pointsRef.current.rotation.z += 0.0001

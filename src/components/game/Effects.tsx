@@ -14,13 +14,15 @@ import { useGameStore } from '@/stores/gameStore'
 
 export default function Effects() {
   const chromaRef = useRef<any>(null)
+  const chromaOffset = useRef(new THREE.Vector2(0.002, 0.002))
 
   useFrame(() => {
     if (!chromaRef.current) return
     const store = useGameStore.getState()
     // Increase chromatic aberration with speed
     const intensity = (store.speed / store.maxSpeed) * 0.004
-    chromaRef.current.offset = new THREE.Vector2(intensity, intensity)
+    chromaOffset.current.set(intensity, intensity)
+    chromaRef.current.offset = chromaOffset.current
   })
 
   return (

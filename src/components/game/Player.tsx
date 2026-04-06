@@ -18,6 +18,8 @@ export default function Player() {
   const trailPositions = useRef(new Float32Array(300)) // 100 trail points x 3
   const trailIndex = useRef(0)
   const trailTimer = useRef(0)
+  const tmpColor = useRef(new THREE.Color())
+  const tmpEmissive = useRef(new THREE.Color())
 
   useFrame((state, delta) => {
     const store = useGameStore.getState()
@@ -91,8 +93,8 @@ export default function Player() {
       const mat = meshRef.current.material as THREE.MeshStandardMaterial
       const targetColor = DIMENSION_COLORS[store.currentDimension]
       const targetEmissive = DIMENSION_EMISSIVE[store.currentDimension]
-      mat.color.lerp(new THREE.Color(targetColor), 0.15)
-      mat.emissive.lerp(new THREE.Color(targetEmissive), 0.15)
+      mat.color.lerp(tmpColor.current.set(targetColor), 0.15)
+      mat.emissive.lerp(tmpEmissive.current.set(targetEmissive), 0.15)
     }
   })
 
