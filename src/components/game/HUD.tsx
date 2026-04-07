@@ -14,6 +14,7 @@ export default function HUD() {
   const driftBonusActive = useGameStore((s) => s.driftBonusActive)
   const energyFragments = useGameStore((s) => s.energyFragments)
   const nearMisses = useGameStore((s) => s.nearMisses)
+  const resume = useGameStore((s) => s.resume)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
 
   useEffect(() => {
@@ -96,10 +97,15 @@ export default function HUD() {
 
       {/* Paused overlay */}
       {phase === 'paused' && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/60 pointer-events-auto">
+        <div
+          className="absolute inset-0 flex items-center justify-center bg-black/60 pointer-events-auto cursor-pointer"
+          onClick={resume}
+        >
           <div className="text-center">
             <div className="text-4xl font-bold text-white mb-4">PAUSED</div>
-            <div className="text-zinc-400">Press ESC to resume</div>
+            <div className="text-zinc-400">
+              {isTouchDevice ? 'Tap to resume' : 'Press ESC or click to resume'}
+            </div>
           </div>
         </div>
       )}

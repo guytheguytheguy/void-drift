@@ -9,6 +9,7 @@ export default function Camera() {
   const { camera } = useThree()
   const targetPos = useRef(new THREE.Vector3())
   const targetLook = useRef(new THREE.Vector3())
+  const currentLook = useRef(new THREE.Vector3())
 
   useFrame(() => {
     const store = useGameStore.getState()
@@ -30,10 +31,9 @@ export default function Camera() {
     }
 
     camera.position.lerp(targetPos.current, 0.05)
-    const currentLook = new THREE.Vector3()
-    camera.getWorldDirection(currentLook)
-    currentLook.add(camera.position)
-    currentLook.lerp(targetLook.current, 0.05)
+    camera.getWorldDirection(currentLook.current)
+    currentLook.current.add(camera.position)
+    currentLook.current.lerp(targetLook.current, 0.05)
     camera.lookAt(targetLook.current)
   })
 

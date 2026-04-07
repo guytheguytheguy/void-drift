@@ -161,11 +161,22 @@ function ObstacleGeometry({ type }: { type: string }) {
 function EnergyMesh({ fragment }: { fragment: EnergyFragment }) {
   const meshRef = useRef<THREE.Mesh>(null)
 
+  // Derive a stable phase offset from the fragment id so each crystal oscillates
+  // at a different point in its cycle instead of all bobbing in sync.
+  const phase = useMemo(() => {
+    let hash = 0
+    for (let i = 0; i < fragment.id.length; i++) {
+      hash = (hash * 31 + fragment.id.charCodeAt(i)) | 0
+    }
+    return (Math.abs(hash) % 628) / 100 // 0 – 2π
+  }, [fragment.id])
+
   useFrame((state) => {
     if (meshRef.current) {
-      meshRef.current.rotation.y = state.clock.elapsedTime * 3
-      meshRef.current.rotation.x = state.clock.elapsedTime * 2
-      meshRef.current.position.y = fragment.position[1] + Math.sin(state.clock.elapsedTime * 4) * 0.3
+      const t = state.clock.elapsedTime
+      meshRef.current.rotation.y = t * 3
+      meshRef.current.rotation.x = t * 2
+      meshRef.current.position.y = fragment.position[1] + Math.sin(t * 4 + phase) * 0.3
     }
   })
 
