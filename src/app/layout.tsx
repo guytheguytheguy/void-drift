@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   title: 'Void Drift — Phase Through Dimensions',
   description:
     'A 3D browser game where you phase between three color dimensions to dodge obstacles in an infinite procedural void. Free to play, no install required.',
-  metadataBase: new URL('https://voiddrift.dev'),
+  metadataBase: new URL('https://voiddrift.veridux.ai'),
   openGraph: {
     title: 'Void Drift — Phase Through Dimensions',
     description: 'A 3D dimension-phasing browser game. Dodge obstacles across three color realities.',
     type: 'website',
-    url: 'https://voiddrift.dev',
+    url: 'https://voiddrift.veridux.ai',
     images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
   },
   twitter: {

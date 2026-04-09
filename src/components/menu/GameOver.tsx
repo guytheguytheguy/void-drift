@@ -66,13 +66,15 @@ export default function GameOver() {
   const [copied, setCopied] = useState(false)
 
   function handleShare() {
-    const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me?\nhttps://voiddrift.dev\n#VoidDrift #BrowserGame`
+    const siteUrl = window.location.origin
+    const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me?\n${siteUrl}\n#VoidDrift #BrowserGame`
     const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`
     window.open(url, '_blank', 'width=550,height=420')
   }
 
   async function handleCopyLink() {
-    const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me? https://voiddrift.dev`
+    const siteUrl = window.location.origin
+    const text = `I scored ${score.toLocaleString()} in Void Drift! Can you beat me? ${siteUrl}`
     try {
       await navigator.clipboard.writeText(text)
       setCopied(true)
@@ -109,9 +111,13 @@ export default function GameOver() {
           {displayScore.toLocaleString()}
         </div>
 
-        {isNewBest && (
+        {isNewBest ? (
           <div className="text-yellow-400 text-sm font-bold tracking-widest animate-pulse mb-4">
             NEW PERSONAL BEST!
+          </div>
+        ) : personalBest > 0 && (
+          <div className="text-zinc-500 text-xs font-mono mb-4">
+            BEST: {personalBest.toLocaleString()}
           </div>
         )}
 
