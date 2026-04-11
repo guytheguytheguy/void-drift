@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://voiddrift.dev/sitemap.xml',
+    sitemap: 'https://voiddrift.veridux.ai/sitemap.xml',
   }
 }
