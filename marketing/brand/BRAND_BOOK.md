@@ -1,83 +1,35 @@
-# Void Drift - Brand Book
+# VoidDrift — Brand Book
 
-**Version:** 1.0
-**Date:** 2026-03-29
-**Product:** [Void Drift](https://voiddrift.dev)
+**Version:** 2.0  
+**Date:** 2026-05-25  
+**Product:** [VoidDrift](https://void-drift.veridux.ai)  
 **Parent Brand:** [Veridux Labs](https://veridux.ai)
 
 ---
 
 ## Brand Vision
 
-**To redefine what a browser game can be -- proving that instant-play experiences can deliver console-quality 3D visuals, endless variety, and global competition without a single download.**
+To prove that a browser game can be immersive, visually striking, and mechanically deep — delivered through a URL with no friction, no cost, and no compromise.
 
-Void Drift envisions a future where the browser is a legitimate gaming platform, and "just a browser game" is a compliment, not a caveat.
+VoidDrift exists in a browser tab. That is not a limitation. It is the point.
 
 ---
 
 ## Brand Mission
 
-**Deliver an immersive, procedurally-generated 3D arcade experience that any player can access instantly through their browser -- combining striking visual design, infinite replayability, and global leaderboard competition in a zero-friction package.**
+Give every player a 3D arcade game with a genuine mechanic — three shifting dimensions, a global leaderboard, and a visual identity that is unmistakably its own — without asking them to download anything.
 
 ---
 
 ## Brand Values
 
-### 1. Instant Gratification
-No downloads. No installs. No tutorials. No loading screens that last longer than the gameplay. Click the link, you're in the void. Friction is the enemy.
+**Dimensional depth.** The game's core innovation is three parallel realities that the player navigates simultaneously. This carries into the brand: there is always more than the surface. The visual identity reflects dimension through color contrast. The copy reflects dimension through layers of meaning.
 
-### 2. Visual Identity
-Void Drift isn't just a game -- it's an aesthetic experience. The void has a look and feel that's immediately recognizable: deep space, dimensional rifts, ethereal particle effects. Every frame should be screenshot-worthy.
+**Zero friction.** The browser-native delivery is a design value, not a technical constraint. Everything about VoidDrift — the game, the brand, the copy — removes barriers. Short sentences. Direct CTAs. No walls between the player and the experience.
 
-### 3. Endless Variety
-No two runs are the same. Procedural generation means the void reshapes itself for every session. Players return because the challenge is always fresh, not because we gatekeep content.
+**Visual identity over noise.** VoidDrift has three colors (crimson, cyan, violet) and they mean something. Crimson is danger and density. Cyan is precision and timing. Violet is complexity and compound challenge. Every branded asset uses this palette deliberately, not decoratively.
 
-### 4. Fair Competition
-The global leaderboard is the heart of the competitive experience. It's transparent, fair, and based purely on skill. No pay-to-win, no advantage boosts, no premium shortcuts. The best drifter leads.
-
-### 5. Technical Excellence
-Under the hood, Void Drift is a showcase of modern web engineering. React Three Fiber, Zustand, Supabase, TypeScript -- every technology choice serves the player experience while demonstrating what the web platform can achieve.
-
----
-
-## Voice & Tone
-
-### Brand Voice Attributes
-
-| Attribute | Description | Example |
-|-----------|-------------|---------|
-| **Atmospheric** | Evokes the feeling of the void -- vast, mysterious, slightly ominous. The game's world extends to the language. | "The void awaits. How far can you drift?" |
-| **Minimal** | Short, impactful statements. The void doesn't explain itself -- neither does the brand. | "No download. No install. Just drift." |
-| **Challenging** | Provokes the competitive instinct. Dares the player to try, to improve, to beat the board. | "You won't survive 60 seconds. Prove me wrong." |
-| **Cool** | Effortlessly stylish. Not trying too hard, not explaining too much. Confident in the experience. | "Phase through dimensions. Drift through the void." |
-| **Inclusive** | Anyone can play. The void doesn't discriminate by platform, device, or skill level. | "Open a browser. Any browser. You're ready." |
-
-### Tone by Context
-
-| Context | Tone |
-|---------|------|
-| Landing page | Atmospheric, mysterious, inviting |
-| In-game UI | Minimal, clear, non-intrusive |
-| Game over screen | Challenging ("drift further?"), leaderboard-focused |
-| Social media | Provocative, competitive, visual-forward |
-| Developer content | Technical, enthusiastic, behind-the-scenes |
-| Press/media | Professional, concise, feature-focused |
-
-### Writing Do's and Don'ts
-
-**Do:**
-- Keep copy short and punchy -- match the game's instant pace
-- Use void/space/dimensional vocabulary naturally ("drift," "phase," "dimension," "void")
-- Let gameplay GIFs and visuals do the talking -- minimal explanation needed
-- Include leaderboard scores and competitive elements in social posts
-- Maintain the atmospheric mood even in practical communication
-
-**Don't:**
-- Over-explain the game -- it takes 3 seconds to understand by playing
-- Use generic gaming jargon ("epic," "awesome," "insane")
-- Break the atmospheric tone with corporate language
-- Write long paragraphs -- the brand voice is minimal by design
-- Downplay the technical achievement ("just a browser game")
+**Honest competition.** The leaderboard is real. The scores are real. There is no manipulation, no matchmaking, no artificial handicaps. The void is equal for every player.
 
 ---
 
@@ -85,102 +37,105 @@ Under the hood, Void Drift is a showcase of modern web engineering. React Three 
 
 ### Color Palette
 
-| Color | Hex | Usage |
-|-------|-----|-------|
-| **Void Black** | `#0A0A0F` | Primary background. The void itself. |
-| **Drift Purple** | `#7C3AED` | Primary accent. Dimensional rifts, UI highlights, energy effects |
-| **Phase Cyan** | `#06B6D4` | Secondary accent. Player trail, speed effects, active states |
-| **Rift Magenta** | `#EC4899` | Danger indicators, obstacles, warning states |
-| **Star White** | `#E2E8F0` | Text, UI elements, particle effects |
-| **Nebula Blue** | `#1E1B4B` | Deep backgrounds, gradients, depth layers |
-| **Score Gold** | `#FBBF24` | Leaderboard positions, score display, achievement highlights |
-| **Success Green** | `#10B981` | New high score, personal best, positive states |
+| Color | Hex | Role |
+|-------|-----|------|
+| **Crimson** | `#DC2626` | Crimson Dimension — danger, density, aggression |
+| **Cyan** | `#06B6D4` | Cyan Dimension — precision, speed, corridors |
+| **Violet** | `#7C3AED` | Violet Dimension — complexity, layered hazards |
+| **Void Black** | `#08080F` | Primary background — the void itself |
+| **Deep Space** | `#0F0A1A` | Secondary background, depth layers |
+| **Star White** | `#E8E8F0` | Primary text and UI elements |
+| **Score Gold** | `#FBBF24` | Leaderboard positions, personal bests, score display |
 
-**Design Rationale:** The palette evokes deep space with dimensional energy. Void Black as the primary background creates the sensation of drifting through nothingness. Drift Purple and Phase Cyan provide the dimensional energy that makes the void come alive. Every color serves a functional role in gameplay while maintaining the aesthetic.
-
-**Gradient:** Primary gradient flows from Nebula Blue (#1E1B4B) through Drift Purple (#7C3AED) to Phase Cyan (#06B6D4), used for dimensional rift effects and key visual moments.
+**Color Rules:**
+- Each dimension color is reserved for that dimension only. Crimson does not appear in Cyan or Violet contexts.
+- Void Black is the default background for all branded assets. The void is always present.
+- Gradients should flow between dimension colors only when explicitly representing a dimension shift (e.g., Crimson → Cyan). Do not blend dimension colors decoratively.
+- Score Gold is used exclusively for achievement states (new high score, leaderboard rank).
 
 ### Typography
 
-| Element | Font | Weight | Size Range |
-|---------|------|--------|------------|
-| **Game Title** | Orbitron | Bold (700) | 48-72px |
-| **UI Headers** | Orbitron | Semi-Bold (600) | 20-32px |
-| **Score Display** | JetBrains Mono | Bold (700) | 24-48px |
-| **Body Text** | Inter | Regular (400) | 14-16px |
-| **Leaderboard** | JetBrains Mono | Regular (400) | 14-18px |
-| **HUD Elements** | Inter | Medium (500) | 12-14px |
+| Element | Font | Weight |
+|---------|------|--------|
+| Game title / display | Orbitron | Bold (700) |
+| UI headers | Orbitron | Semi-Bold (600) |
+| Score and leaderboard data | JetBrains Mono | Bold (700) |
+| Body copy and HUD | Inter | Regular (400) |
 
-**Rationale:** Orbitron is a geometric, futuristic display font that immediately signals "sci-fi/space." JetBrains Mono for scores and leaderboard gives the precise, data-driven feel of a mission control display. Inter for body text and HUD ensures readability without competing with the visual experience.
+**Rationale:** Orbitron signals the sci-fi/void aesthetic without being illegible. JetBrains Mono gives scores and leaderboard numbers the precise, mission-control quality they require. Inter keeps body copy readable without competing with the visual experience.
 
-### Logo Concept
+### Logo
 
-**Mark:** "VOID DRIFT" rendered in Orbitron with a subtle dimensional distortion effect -- the letters appear to shift between planes, as if phasing between dimensions. A horizontal line or particle trail extends from the "T," representing the drift motion.
+**Full mark:** "VOIDRIFT" in Orbitron Bold with a subtle dimension-shift distortion — the letterforms appear to fractionally separate across the three dimension colors, as if the text itself is phasing. The word is presented as a single unit, not "Void Drift" with a space.
 
-**Logomark:** A simplified dimensional rift icon -- two overlapping geometric planes (hexagons or triangles) offset from each other, suggesting depth and phasing. Uses Drift Purple and Phase Cyan.
+**Logomark:** Three overlapping geometric planes — one crimson, one cyan, one violet — offset in depth perspective, suggesting dimensional layers. The overlap zone creates a dark neutral center.
 
-**Favicon:** The rift icon in minimal form -- recognizable at 16x16 and 32x32 pixel sizes.
+**Favicon:** The three-plane mark simplified to 32×32 — a triangular or diamond shape with the three color segments visible.
 
-**Clear space:** Minimum clear space equal to the cap height of "V" on all sides.
+**Clear space:** Minimum clear space equal to cap-height of "V" on all four sides of the full mark.
 
 **Versions:**
-- Full logo (mark + tagline) for landing page and marketing
-- Title only for in-game header and social cards
-- Rift icon for favicon, app icon, and compact contexts
-- Monochrome white version for dark backgrounds (primary use)
-
-### In-Game Visual Style
-
-- **Environment:** Deep void with subtle particle fields. Stars and nebula effects in the far background. Dimensional rift elements as environmental features.
-- **Obstacles:** Geometric, angular shapes with Rift Magenta glow. Clean edges, not organic forms.
-- **Player:** Clean geometric form with Phase Cyan trail effect. Minimal detail, maximum readability.
-- **Particles:** Abundant particle effects for speed, collisions, and dimension transitions. Drift Purple and Phase Cyan dominant.
-- **UI overlay:** Minimal, transparent HUD. Score top-center, speed indicator subtle, controls invisible (learned by doing).
-- **Screenshots/promo:** Always captured at the most visually dramatic moments -- dimensional transitions, near-misses, high-speed drifts.
-
-### Social Media Visual Style
-
-- **Gameplay GIFs:** 3-5 second loops of the most visually striking moments
-- **Score cards:** Dark background with Score Gold text, player name, and rank
-- **Comparison images:** "Your best" vs "Global best" side-by-side scores
-- **Behind-the-scenes:** Code snippets on Terminal Gray backgrounds with Drift Purple accents
-- **Announcement posts:** Void Black background, minimal text in Star White, one accent color
+- Full logo (mark + wordmark) — landing page, press kit, social card header
+- Wordmark only — in-game header, compact contexts
+- Logomark only — favicon, app icon, profile images
 
 ---
 
-## Messaging Guidelines
+## Tone of Voice
 
-### Tagline
-**"Phase through dimensions. Drift through the void."**
+### Voice Attributes
 
-Two short sentences that capture both the mechanic (phasing, drifting) and the setting (dimensions, void). The rhythm is deliberate -- it sounds like movement.
+**Atmospheric.** VoidDrift copy feels like the void — sparse, slightly ominous, vast. Sentences are short. Silence is allowed.
 
-### Elevator Pitch (15 seconds)
-"Void Drift is a free 3D arcade game that runs entirely in your browser. Navigate through procedurally-generated void spaces, dodge obstacles, and compete on the global leaderboard. No download. Click and play."
+**Direct.** No qualifiers, no softening. "No download." Not "you don't even need to download anything." The void does not hedge.
 
-### Positioning Statement
-For casual gamers and web technology enthusiasts seeking an instant-play 3D gaming experience, Void Drift is the browser-based arcade game that delivers procedurally-generated 3D environments and global leaderboard competition without any download. Unlike traditional browser games with basic 2D graphics, Void Drift pushes the boundaries of what's possible in the browser with React Three Fiber and Supabase-powered real-time features.
+**Challenging.** The brand dares the player. It does not explain why the game is hard — it assumes you want to find out.
 
-### Key Messages
+**Confident.** VoidDrift does not ask whether you'll enjoy it. It assumes you will. If you survive.
 
-**Play CTA:**
-"Enter the void." (single, definitive CTA)
+### Tone by Context
 
-**Social share after game:**
-"I drifted [X] meters in Void Drift. Think you can beat that? [voiddrift.dev](https://voiddrift.dev)"
+| Context | Tone |
+|---------|------|
+| Landing page headline | Atmospheric, minimal, one strong statement |
+| Game over screen | Challenging — provokes the next attempt |
+| Leaderboard | Data-only, neutral — let the scores speak |
+| Social media | Provocative, visual-first, competitive |
+| Developer / tech posts | Technical, honest, behind-the-scenes |
+| Vibe coding cross-promo | Grounded, factual — "this is what it built" |
 
-**Tech community:**
-"A full 3D arcade experience. React Three Fiber. Supabase leaderboard. Zero plugins. Try it: [voiddrift.dev](https://voiddrift.dev)"
+### Writing Rules
 
-**Press one-liner:**
-"Void Drift is a free, browser-based 3D arcade game with procedural generation and global leaderboards, built with Three.js and Supabase."
+**Do:**
+- Write short. One idea per sentence.
+- Use the vocabulary of the void: phase, drift, dimension, crimson, void, survive.
+- Lead with the visual — gameplay GIFs and screenshots first, text second.
+- Include the leaderboard angle. Scores are shareable. Competition is the hook.
+- Always include the vibe coding CTA where appropriate: "Built with vibe coding — learn the methodology at vibe-coding.academy."
 
-### Boilerplate (About Void Drift)
-Void Drift is a browser-based 3D arcade game where players navigate through procedurally-generated void spaces, avoiding obstacles and competing for placement on the global leaderboard. Built with React Three Fiber, Three.js, Zustand, and Supabase, the game runs entirely in the browser with no downloads or plugins required. Void Drift is developed by Veridux Labs ([veridux.ai](https://veridux.ai)), a product studio building AI-powered tools and interactive web experiences. Play free at [voiddrift.dev](https://voiddrift.dev).
-
-### Veridux Labs Portfolio Reference
-Void Drift is part of the Veridux Labs product portfolio alongside [Kynvo](https://kynvo.ai) (AI marketing intelligence), [EndOfCoding](https://endofcoding.com) (AI development platform), [LLMHire](https://llmhire.com) (AI hiring), [AgenticNode](https://agenticnode.io) (agentic AI infrastructure), and [Vibe Coding Academy](https://vibe-coding.academy) (AI coding education).
+**Do not:**
+- Use gaming filler words: "epic," "insane," "crazy," "awesome."
+- Over-explain the mechanic. Show it. The GIF does more than the paragraph.
+- Use corporate language or startup-speak in game-facing copy.
+- Write long paragraphs. The brand is minimal.
+- Call it "just a browser game."
 
 ---
 
-*Brand Book maintained by [Veridux Labs](https://veridux.ai) | voiddrift.dev | Updated 2026-03-29*
+## Key Messaging
+
+**Tagline:** Phase between dimensions. Survive the void.
+
+**Elevator pitch (15 seconds):** "VoidDrift is a free 3D browser game where you phase between three parallel dimensions — Crimson, Cyan, Violet — to dodge obstacles specific to each plane. Global leaderboard. No download. Open a browser and play."
+
+**Social share (end-game):** "I survived [X] seconds in VoidDrift. Think you can beat that? [void-drift.veridux.ai]"
+
+**Tech community one-liner:** "Three.js. Supabase leaderboard. Three shifting dimensions. Entirely in the browser. [void-drift.veridux.ai]"
+
+**Vibe coding CTA:** "VoidDrift was built using vibe coding. This is what the methodology ships. Learn it at [vibe-coding.academy](https://vibe-coding.academy)."
+
+**Boilerplate:** VoidDrift is a free browser-based 3D infinite runner where players phase between three parallel dimensions — Crimson, Cyan, and Violet — each carrying distinct obstacle geometry, to survive as long as possible. Built with Three.js and a Supabase-powered global leaderboard, the game requires no download, no account, and no install. VoidDrift is developed by Veridux Labs ([veridux.ai](https://veridux.ai)). Play free at [void-drift.veridux.ai](https://void-drift.veridux.ai).
+
+---
+
+*Brand Book maintained by [Veridux Labs](https://veridux.ai) | void-drift.veridux.ai | Updated 2026-05-25*

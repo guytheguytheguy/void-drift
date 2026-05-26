@@ -1,50 +1,49 @@
 {
-  "productName": "Void Drift",
-  "tagline": "Phase through dimensions. Drift through the void.",
-  "category": ["browser game", "3D experience", "arcade", "WebGL showcase"],
-  "deployUrl": "https://voiddrift.dev",
-  "repoPath": "C:/Users/User/dev/void-drift",
-  "parentBrand": {
-    "name": "Veridux Labs",
-    "url": "https://veridux.ai"
-  },
+  "name": "VoidDrift",
+  "slug": "void-drift",
+  "tagline": "Phase between dimensions. Survive the void.",
+  "productCategory": ["browser game", "3D infinite runner", "arcade", "WebGL showcase"],
   "targetAudience": [
-    "Casual browser gamers looking for quick, engaging arcade experiences they can play instantly without downloads",
-    "Web technology enthusiasts and Three.js/WebGL developers interested in browser-based 3D capabilities",
-    "Indie game fans who appreciate unique visual aesthetics and procedural generation",
-    "Competitive arcade players motivated by global leaderboards and score chasing",
-    "Developers and designers seeking inspiration for browser-based 3D projects"
+    "Casual browser gamers who want instant, no-install entertainment during breaks or downtime",
+    "Competitive arcade players motivated by global leaderboards and score-chasing across sessions",
+    "Web technology enthusiasts and Three.js developers interested in production-quality browser 3D",
+    "Indie game fans who appreciate distinctive visual aesthetics and games with a high skill ceiling",
+    "Vibe coding and AI-assisted development community members drawn to what the methodology produces"
   ],
-  "coreValueProps": [
-    "Instant play: zero downloads, zero installs -- open the browser and you're in the void. Works on any modern device.",
-    "Procedurally-generated environments: every run is unique. The void reshapes itself, keeping gameplay fresh across hundreds of sessions.",
-    "Global competition: Supabase-powered real-time leaderboard lets you compete against players worldwide and track your progression."
+  "uniqueValue": "VoidDrift is the only browser infinite runner built around a three-dimension-shifting mechanic. Unlike single-environment runners, players must simultaneously navigate obstacle geometry across Crimson, Cyan, and Violet dimensions — each with distinct hazard layouts — deciding in real time which dimensional plane to inhabit. The result is a skill ceiling far above typical browser runners combined with a global leaderboard to make every improvement meaningful.",
+  "keyFeatures": [
+    "Three-dimension shifting: Crimson, Cyan, Violet — each with unique obstacle geometry and visual identity",
+    "Global leaderboard powered by Supabase — persistent competition across all players worldwide",
+    "Three.js 3D rendering running entirely client-side — no plugins, no download",
+    "Instant play: zero install, zero account required — share a URL and the game starts",
+    "Infinite procedural progression with increasing difficulty",
+    "Fully browser-native: works on any modern desktop or mobile browser",
+    "Built with vibe coding methodology — showcases what AI-assisted development delivers"
   ],
-  "techStack": ["Next.js", "React", "Three.js", "React Three Fiber", "Zustand", "Tailwind CSS", "Supabase", "TypeScript"],
-  "pricingModel": "Free-to-play. No microtransactions. Serves as a portfolio showcase for Veridux Labs' technical capabilities in 3D web experiences and real-time backend integration. Revenue is indirect through brand awareness and developer portfolio credibility.",
-  "competitors": [
+  "pricingModel": "Free to play. No microtransactions. No ads. VoidDrift is an engagement and brand awareness driver for Veridux Labs and a demonstration of the vibe coding methodology. Revenue is indirect through brand credibility and cross-promotion of Veridux Labs products.",
+  "deployUrl": "https://void-drift.veridux.ai",
+  "techStack": ["Three.js", "JavaScript", "TypeScript", "Supabase", "Vercel"],
+  "competitiveAdvantages": [
+    "Dimension-shifting mechanic is unique among browser infinite runners — no comparable free browser game offers three-plane obstacle navigation",
+    "Visual identity is immediately distinctive: crimson, cyan, and violet dimension palettes create a recognizable aesthetic no competitor shares",
+    "Supabase-powered global leaderboard delivers persistent competition that instant-play browser runners like Slope Game entirely lack",
+    "Three.js rendering quality exceeds the basic WebGL of popular competitors like Slope and Tunnel Rush",
+    "Zero friction entry — URL share converts directly to play session with no account, no store, no install",
+    "Cross-promotes vibe coding methodology, creating secondary audience from AI-assisted development community"
+  ],
+  "crossPromotionTargets": [
     {
-      "name": "Slope",
-      "url": "https://slope-game.com",
-      "positioning": "Popular browser-based 3D endless runner. Ball rolls down an increasingly difficult slope. Massive player base through school/office play. Simple WebGL graphics, no accounts or leaderboards. Ad-supported. Extremely accessible but technically basic."
+      "product": "Vibe Coding Academy",
+      "url": "https://vibe-coding.academy",
+      "rationale": "VoidDrift was built using vibe coding. Direct call-to-action: 'Built with vibe coding — learn the methodology at vibe-coding.academy'"
     },
     {
-      "name": "HexGL",
-      "url": "https://hexgl.bkcore.com",
-      "positioning": "Open-source browser racing game built with Three.js. Futuristic anti-gravity racer on a fixed track. Technical showcase for WebGL capabilities. Single track, no leaderboard integration, no procedural generation. Impressive but limited replayability."
-    },
-    {
-      "name": "Krunker.io",
-      "url": "https://krunker.io",
-      "positioning": "Browser-based first-person shooter with retro/voxel graphics. Massive multiplayer community, custom maps, trading system. Different genre (FPS vs arcade) but competes for browser gaming attention. More complex, longer session times."
+      "product": "Veridux Labs",
+      "url": "https://veridux.ai",
+      "rationale": "VoidDrift is a flagship brand engagement product. Every play session builds awareness for the Veridux Labs portfolio."
     }
   ],
-  "differentiators": [
-    "Procedurally-generated void environments ensure no two runs are identical",
-    "Modern tech stack (React Three Fiber + Zustand) demonstrates production-quality browser 3D",
-    "Supabase-powered global leaderboard with real-time updates",
-    "Unique visual aesthetic (void/dimensional theme) stands out from typical browser games",
-    "Built as a showcase of what's possible with modern web technologies"
-  ],
-  "lastUpdated": "2026-03-29"
+  "company": "Veridux Labs",
+  "companyUrl": "https://veridux.ai",
+  "lastUpdated": "2026-05-25"
 }
