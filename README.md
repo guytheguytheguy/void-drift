@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Void Drift 🌀
 
-## Getting Started
+**Free-to-play 3D browser game** — pilot a glowing craft through an infinite procedurally generated void, phasing between three color dimensions to dodge obstacles.
 
-First, run the development server:
+**Play now:** [voiddrift.veridux.ai](https://voiddrift.veridux.ai) *(voiddrift.dev DNS pending setup)*
+
+---
+
+## Gameplay
+
+- **Phase between 3 dimensions** — Crimson, Cyan, Violet — each with unique obstacles
+- **Infinite procedural generation** — no two runs are the same
+- **Global leaderboard** — compete with players worldwide
+- **Mobile-friendly** — tap-to-phase controls optimized for touch
+- **No install, no account required** — just open and play
+
+## Tech Stack
+
+- **Next.js 15** — App Router, Server Components
+- **Three.js + @react-three/fiber** — 3D rendering in the browser
+- **Zustand** — game state management
+- **Supabase** — global leaderboard (optional)
+- **Tailwind CSS** — UI styling
+- **TypeScript** — strict mode throughout
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Optional: Enable Global Leaderboard
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Set these env vars to enable score persistence:
 
-## Learn More
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
 
-To learn more about Next.js, take a look at the following resources:
+The game runs fully without Supabase — scores just won't persist to the global leaderboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Vercel Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Push to `main` to auto-deploy via Vercel.
 
-## Deploy on Vercel
+Set these in Vercel project `prj_Vo0ULTsHTc0Apj1H2NfPbmS3hqNa`:
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## About
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built by AI agents at [Veridux Labs](https://veridux.ai). Free to play, forever.
